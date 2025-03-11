@@ -1,0 +1,34 @@
+{
+  "DetallePolizas": [
+    {
+      "numeroPoliza": "00001",
+      "nombreCliente": "Ramiro Ivan Morales Pilaguano",
+      "identificacion": "1721895405",
+      "brocker": "CCASTRO",
+      "ciudad": "Quito",
+      "persona": "Natural",
+      "ramo": "Vehiculos",
+      "montoAsegurado": "20000",
+      "plan": "VIP",
+      "aseguradora": "Seguros Unidos",
+      "inicioVigencia": "2024-11-29",
+      "finVigencia": "2025-11-29",
+      "Renovar": false
+    },
+    {
+      "numeroPoliza": "00002",
+      "nombreCliente": "Luis Felipe Cando Perez",
+      "identificacion": "1721895406",
+      "brocker": "CCASTRO",
+      "ciudad": "Guayaquil",
+      "persona": "Juridica",
+      "ramo": "Vehiculos",
+      "montoAsegurado": "40000",
+      "plan": "VIP 2000",
+      "aseguradora": "Seguro Amazonas",
+      "inicioVigencia": "2024-04-29",
+      "finVigencia": "2025-04-29",
+      "Renovar": true
+    }
+  ]
+}

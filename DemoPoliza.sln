@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35431.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polizas", "Polizas\Polizas.csproj", "{7733547D-24DA-417C-BAEE-2B602ED989D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7733547D-24DA-417C-BAEE-2B602ED989D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7733547D-24DA-417C-BAEE-2B602ED989D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7733547D-24DA-417C-BAEE-2B602ED989D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7733547D-24DA-417C-BAEE-2B602ED989D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BCDDD3B7-94D1-4336-A238-5979BF25BD58}
+	EndGlobalSection
+EndGlobal

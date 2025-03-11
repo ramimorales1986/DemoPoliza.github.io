@@ -1,0 +1,182 @@
+﻿@model Polizas.Models.ModeloPoliza
+@{
+    ViewData["Title"] = "Principal";
+    Layout = "_LayoutPrincipal";
+}
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="col-lg-12 col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex gap-3">
+                        <img alt="" src="~/ima/iconocheck.webp" style="width:46px;">
+                        <div class="d-grid">
+                            <h4>Proceso de renovación</h4>
+                            <span>Mantente Protegido</span>
+                        </div>
+                    </div><hr />
+                    <div class="row mt-4 mb-3">
+                        <div class="col-lg-6 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label class="mb-2" for="remember">Numero Póliza</label>
+                                <input tabindex="2" class="form-control" placeholder="Poliza" value="@Model.DetalleCliente?.NumeroPoliza" readonly>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label class="mb-2" for="remember">Identificacion</label>
+                                <input tabindex="2" class="form-control" placeholder="Identificacion" value="@Model.DetalleCliente?.Identificacion" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-lg-6 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label class="mb-2" for="remember">Nombre Cliente</label>
+                                <input tabindex="2" class="form-control" placeholder="Nombre Cliente" value="@Model.DetalleCliente?.NombreCliente" readonly>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label class="mb-2" for="remember">Ciudad</label>
+                                <input tabindex="2" class="form-control" placeholder="ciudad" value="@Model.DetalleCliente?.Ciudad" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-lg-6 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label class="mb-2" for="remember">Tipo persona</label>
+                                <input tabindex="2" class="form-control" placeholder="Nombre Cliente" value="@Model.DetalleCliente?.Persona" readonly>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label class="mb-2" for="remember">Brocker</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="1" selected>@Model.DetalleCliente?.Brocker</option>
+                                    <option value="2">MMCANDO</option>
+                                    <option value="3">PMTRAEE</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-lg-6 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label class="mb-2" for="remember">Ramo</label>
+                                <input tabindex="2" class="form-control" placeholder="Ramo" value="@Model.DetalleCliente?.Ramo" readonly>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label class="mb-2" for="remember">Monto</label>
+                                <input tabindex="2" class="form-control" placeholder="Monto" value="@Model.DetalleCliente?.MontoAsegurado">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-lg-6 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label class="mb-2" for="remember">Plan</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="1" selected>@Model.DetalleCliente?.Plan</option>
+                                    <option value="2">VIP 5000</option>
+                                    <option value="3">VIP 6000</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label class="mb-2" for="remember">Aseguradora</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="1" selected>@Model.DetalleCliente?.Aseguradora</option>
+                                    <option value="2">Seguros Seguros</option>
+                                    <option value="3">Aseguradoa verde</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-lg-6 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label class="mb-2" for="remember">Inicio de vigencia</label>
+                                <input tabindex="2" type="date" class="form-control" placeholder="Plan" value="@Model.DetalleCliente?.InicioVigencia">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <label class="mb-2" for="remember">fin de vigencia</label>
+                                <input tabindex="2" type="date" class="form-control" placeholder="Monto" value="@Model.DetalleCliente?.FinVigencia">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="completado-botones mt-4">
+                        <div class="row posicion-contenedor-botones-acciones">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <a asp-action="DetallePoliza" asp-controller="Home">
+                                    <button type="button" class="btn-azul-secuadrio-activo mb-3">
+                                        Regresar
+                                    </button>
+                                </a>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <a asp-action="Renovar" asp-controller="Home">
+                                    <button id="btnPagarServicio" class="btn-azul-bgr mb-3">
+                                        Renovar
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    .posicion-contenedor-botones-acciones {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    :root {
+        --bs-azul: #004ace;
+        --bs-blanco: #fff;
+        --bs-grey: #4c505d;
+        --bs-verde: #81be04;
+        --bs-gris: #bbbbbb;
+        --bs-gris-2: #c4c4c4;
+    }
+
+    .btn-azul-secuadrio-activo {
+        background-color: transparent;
+        font-weight: 600;
+        padding: 8px;
+        border-radius: 24px;
+        border: solid 1.5px var(--bs-azul) !important;
+        font-size: 14px;
+        color: var(--bs-azul);
+        width: 100%;
+        margin-bottom: 1rem !important;
+    }
+
+    .btn-azul-bgr {
+        background-color: var( --bs-blue);
+        font-weight: 600;
+        padding: 9px;
+        border-radius: 24px;
+        font-size: 14px;
+        color: #fff;
+        border: 0;
+        width: 100%;
+        margin-bottom: 1rem !important;
+    }
+</style>
